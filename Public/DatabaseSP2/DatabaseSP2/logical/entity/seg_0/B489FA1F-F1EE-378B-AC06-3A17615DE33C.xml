@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B489FA1F-F1EE-378B-AC06-3A17615DE33C" name="REPARO">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 20:52:21 UTC</createdTime>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_reparo" id="AD9F0C6E-B77B-9FCA-2A58-AA230CB39693">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 20:52:37 UTC</createdTime>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descricao" id="391319F1-35BB-04AF-0345-2FAE8A7F41A4">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 20:54:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Breve descrição do reparo ]]></commentInRDBMS>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-1768A872-F385-FDBA-D95E-0CB63F5908E2@LOGDT10045</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="valor" id="30DD6EA9-7011-A86B-15F2-F5000E517FAC">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 20:55:16 UTC</createdTime>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tempo_reparo" id="803A5E8C-E371-DF56-B905-16B2E1E59A44">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 20:55:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tempo que a oficina ficará com o veículo:
+Tempo medido em horas, dias ou semanas.]]></commentInRDBMS>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="071ACFF8-A458-37A3-AD99-CFD357798C0C" name="SERVICO PK">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 20:54:05 UTC</createdTime>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>AD9F0C6E-B77B-9FCA-2A58-AA230CB39693</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

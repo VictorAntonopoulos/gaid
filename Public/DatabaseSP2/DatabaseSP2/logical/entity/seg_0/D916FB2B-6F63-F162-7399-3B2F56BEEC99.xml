@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D916FB2B-6F63-F162-7399-3B2F56BEEC99" name="MANUTENCAO">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 21:12:46 UTC</createdTime>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_manutencao" id="60EA7243-B293-3048-6A93-01AFAE6A47B5">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 22:09:45 UTC</createdTime>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nome" id="1356E5FE-4BC8-36B2-BC2A-29BFE50780DF">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 21:13:12 UTC</createdTime>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descricao" id="73290E82-AE3F-B946-3D98-AD374CA1BEFD">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 21:13:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[Breve desrcrição  da manutenção]]></commentInRDBMS>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-1768A872-F385-FDBA-D95E-0CB63F5908E2@LOGDT10045</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="valor" id="D677BFE0-E3E3-EAB9-41C6-8B88350E6AD5">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 21:15:05 UTC</createdTime>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tempo_manutencao" id="64BDCC18-8638-CBC5-42BD-62A3A0268947">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 21:16:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tempo que oficinca ficará com o carro
+Medido em horas, dias ou semanas]]></commentInRDBMS>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="344B7D89-ECB1-FEA5-6289-9C6F26181817" name="MANUTENCAO PK">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 21:13:09 UTC</createdTime>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>CA61F222-627F-66D3-CCAC-E9FBD74AC42E</attributeRef>
+<attributeRef>60EA7243-B293-3048-6A93-01AFAE6A47B5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

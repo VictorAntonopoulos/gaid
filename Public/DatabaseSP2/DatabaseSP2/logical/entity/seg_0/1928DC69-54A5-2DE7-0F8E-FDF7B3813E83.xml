@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1928DC69-54A5-2DE7-0F8E-FDF7B3813E83" name="ORDEM_SERVICO">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 20:58:37 UTC</createdTime>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_ordem_servico" id="E32095CC-8774-8E6F-27DE-F4860F407F44">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 20:58:52 UTC</createdTime>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status_servico" id="65D3963A-E599-DC13-EBE7-3A3623D91609">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 20:59:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Agendado
+Executando
+Finalizado]]></commentInRDBMS>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F41F5A44-7FA9-969A-8F3C-E623042137B2" name="ORDEM_SERVICO PK">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 20:59:06 UTC</createdTime>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E32095CC-8774-8E6F-27DE-F4860F407F44</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

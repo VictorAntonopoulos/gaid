@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E052952B-87EC-C548-3E1A-1CF47C68133A" name="MECANICO">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 19:01:55 UTC</createdTime>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cpf" id="0DA44126-17C2-8F4B-E5F7-1F483277E714">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 19:02:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[Apenas números]]></commentInRDBMS>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nome" id="BBB3731A-8E05-C85C-3F93-4E0053C801A9">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 19:02:40 UTC</createdTime>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rg" id="1DD83FFB-E14C-315D-055A-87132E7D640E">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 19:04:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Apenas números]]></commentInRDBMS>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="especialidade" id="8B9390EA-07C0-396F-8187-BD02427D4A88">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 19:20:01 UTC</createdTime>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="11F995BE-8D17-60BD-351D-774BC67B6E7A" name="MECANICO PK">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 19:02:19 UTC</createdTime>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0DA44126-17C2-8F4B-E5F7-1F483277E714</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

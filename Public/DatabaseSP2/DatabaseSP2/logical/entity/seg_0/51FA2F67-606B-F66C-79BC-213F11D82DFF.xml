@@ -1,0 +1,124 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="51FA2F67-606B-F66C-79BC-213F11D82DFF" name="ENDERECO">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 18:50:38 UTC</createdTime>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cep" id="ADEF5053-F038-9DCE-2009-65D9190F6D79">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 18:50:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Apenas números]]></commentInRDBMS>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="logradouro" id="5B59A0EF-70F6-2F7A-1DBC-AC6BF105FFB7">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 18:51:08 UTC</createdTime>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="num_logradouro" id="4F7D54DC-053C-30EA-F223-EBF105F19D01">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 18:51:27 UTC</createdTime>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="complemento" id="1C3772DC-F73A-E57D-C2C2-5FE6B56BF1F1">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 18:52:25 UTC</createdTime>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cidade" id="BA9D50D7-8FCD-3179-14E2-179563F1BC31">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 18:52:57 UTC</createdTime>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="estado" id="76B20E20-992B-1640-B553-090FA9067C68">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 18:53:26 UTC</createdTime>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="regiao" id="E5C9AC54-D452-F0AC-F954-2560FA1E6F74">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 21:45:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Região da cidade:
+Ex.: Centro = centro
+Zona sul = ZS
+Zona Leste = ZL]]></commentInRDBMS>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="54C0504B-B5CB-BC3F-E535-D5AAC387172B" name="ENDERECO PK">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 18:51:00 UTC</createdTime>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>ADEF5053-F038-9DCE-2009-65D9190F6D79</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

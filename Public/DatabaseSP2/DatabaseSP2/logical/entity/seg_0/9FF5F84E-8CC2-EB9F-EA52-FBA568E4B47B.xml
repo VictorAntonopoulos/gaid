@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9FF5F84E-8CC2-EB9F-EA52-FBA568E4B47B" name="FORNECEDOR">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 21:49:09 UTC</createdTime>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cnpj" id="417DCCCF-B561-252C-2780-D4614B32419E">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 21:50:04 UTC</createdTime>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nome_fantasia" id="5A807B36-ED89-4595-C175-E6A220B76E96">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 21:49:39 UTC</createdTime>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="razao_social" id="437569F7-FB95-95BD-88AE-F983E701FAA5">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 21:49:50 UTC</createdTime>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="situacao_cadastral" id="79BCB785-D4CC-0163-47D7-B006C5E09C45">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 21:50:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[T - Ativo
+F - Inativo
+Situação Cadastral da Empresa]]></commentInRDBMS>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status_fornecedor" id="B4D281D4-5C6B-B322-306D-D072DA95A1D4">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 21:51:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[T - Ativo 
+F - Inativo
+Relação do fornecedor com a oficina]]></commentInRDBMS>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D9B9D362-2207-75E9-E1AC-915A4BAE10EF" name="FORNECEDOR PK">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 21:49:38 UTC</createdTime>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>FA0DC74E-BA66-856D-EA17-891DC665ED11</attributeRef>
+<attributeRef>417DCCCF-B561-252C-2780-D4614B32419E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

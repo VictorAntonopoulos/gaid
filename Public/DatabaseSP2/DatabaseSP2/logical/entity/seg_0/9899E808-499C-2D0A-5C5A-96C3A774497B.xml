@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9899E808-499C-2D0A-5C5A-96C3A774497B" name="PAGAMENTO">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 21:31:33 UTC</createdTime>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="num_transacao" id="818ABA13-6496-AC8E-8282-3E1D20116B65">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 21:37:14 UTC</createdTime>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="forma_pgto" id="56796313-B557-BA97-EABE-8C5E5A2E63B2">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 21:37:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[Pix, 
+Dinheiro, 
+Boleto, 
+Crédito, 
+Débito]]></commentInRDBMS>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="parcelamento" id="FAE73993-F042-C58B-2431-FCDE85570481">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 21:39:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[T - Parcelado
+F - À vista
+]]></commentInRDBMS>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="qtd_parcela" id="A147636F-0B81-F8AA-C0E5-A47DFD8B6552">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 21:40:09 UTC</createdTime>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_pto" id="AF6FA9E2-E8F2-83A2-F800-E63227C9CDD2">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 21:42:02 UTC</createdTime>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="955BA9A6-B2C4-F787-A4E3-73DD5AA0C88D" name="PAGAMENTO PK">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 21:37:34 UTC</createdTime>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>818ABA13-6496-AC8E-8282-3E1D20116B65</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E48F0F38-2BF6-BECB-8FA5-FE282058307E" name="DTC">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 20:47:41 UTC</createdTime>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cod_dtc" id="4F6263BB-B2C9-E016-13E9-4DA7E686BF87">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 20:48:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código de falha ou 
+Diagnostic Trouble Code]]></commentInRDBMS>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descricao" id="359686BC-FBE9-F3B9-3BBF-14562180A42B">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 20:49:05 UTC</createdTime>
+<commentInRDBMS><![CDATA[Breve descrição do DTC:
+Parte do carro afetada, tipo de problema]]></commentInRDBMS>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-1768A872-F385-FDBA-D95E-0CB63F5908E2@LOGDT10045</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6673500A-AA6C-5428-BDB7-30059F996B77" name="DTC PK">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 20:48:23 UTC</createdTime>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4F6263BB-B2C9-E016-13E9-4DA7E686BF87</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

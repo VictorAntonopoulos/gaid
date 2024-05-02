@@ -1,0 +1,150 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F7A59509-4F4A-19FC-4D85-1114B3D8BBB2" name="CARRO">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 20:10:57 UTC</createdTime>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="placa" id="E73F54F6-AE1D-09AA-6847-0D65C132D605">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 20:11:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Apenas números e letras]]></commentInRDBMS>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="modelo" id="28520487-AB6B-0683-3766-749B02C92E8B">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 20:18:20 UTC</createdTime>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="marca" id="0E50A9A9-E763-15B9-A10F-2A8C871E7A67">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 20:18:31 UTC</createdTime>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ano_fabricacao" id="9D420290-F6E2-4202-BFEF-63C7B03B25D0">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 20:19:34 UTC</createdTime>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="torque" id="772DB5A3-545A-3CBB-4BFF-4C82245A6AC5">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 20:20:33 UTC</createdTime>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cambio" id="F3D43853-0A26-7B68-EB15-41CC78CF0069">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 20:20:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[M - manual
+AT - automático]]></commentInRDBMS>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>2 CHAR</dataTypeSize>
+<ownDataTypeParameters>2 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="combustível" id="416E1C8E-E98E-1F2C-51AA-6FCAC5804694">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 20:21:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Flex, 
+Diesel, 
+Gasolina,
+Elétrico]]></commentInRDBMS>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cor" id="EBBC2758-F0CB-F5D5-EA14-579D9819B96A">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 20:24:15 UTC</createdTime>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="quilometragem" id="723E3D50-5140-443B-84D7-1A43C52F4F7B">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 20:24:43 UTC</createdTime>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C75474FE-FB07-DC6D-F9A7-3BCD766C2BBB" name="CARRO PK">
+<createdBy>carolinapinsdorf</createdBy>
+<createdTime>2024-05-02 20:12:42 UTC</createdTime>
+<ownerDesignName>DatabaseSP2</ownerDesignName>
+<engineerTo>
+<item key="68D707DE-C776-583E-9693-173BE6203171" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E73F54F6-AE1D-09AA-6847-0D65C132D605</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
