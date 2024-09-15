@@ -1,0 +1,127 @@
+.formContainer {
+    background-color: #3BA8E7;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    color: #000;
+    position: relative;
+  }
+
+  .imgbg {
+    position: absolute;
+    width: 300px;
+    top: 0;
+    right: 0;
+  }
+  
+  .title {
+    color: #000;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    margin-top: 150px;
+    
+  }
+
+  .container {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .contactInfo {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-family: 'Gayathri' sans-serif;
+    font-weight: 200;
+    
+  }
+  
+
+  .button {
+    background-color: transparent;
+    color: #000;
+    border: 2px solid #000;
+    padding: 0.8rem 2.5rem;
+    cursor: pointer;
+    align-self: center;
+    margin: 0 auto;
+  }
+
+  .row {
+    display: flex;
+    gap: 2rem;
+    margin-block: 2rem;
+  }
+  
+  .logoMarca {
+    width: 200px;
+    margin: auto;
+  }
+
+  .foreignKey {
+    margin-block: 3rem;
+    text-align: center;
+    font-size: 1.5rem;
+    
+   
+    
+  }
+
+  .box {
+    padding: 3rem;
+  }
+
+  
+  
+  .submitButton {
+    padding: 9px 20px;     /* Adiciona espaçamento interno ao botão */
+    border: 2px solid black; /* Adiciona uma borda preta de 2px */
+    background-color: transparent; /* Fundo branco */
+    color: black;            /* Cor do texto preta */
+    cursor: pointer;         /* Muda o cursor para pointer ao passar sobre o botão */
+    font-size: 1rem;         /* Tamanho da fonte */
+    margin-left: 250px;
+    
+    
+  }
+  
+  .submitButton:hover {
+    background-color: rgb(0, 0, 0); /* Troca a cor de fundo quando passar o mouse */
+    color: white;            /* Troca a cor do texto quando passar o mouse */
+    
+  }
+  
+  @media (max-width: 700px) {
+    .formContainer {
+
+    }
+
+    .box {
+      padding: 1rem;
+    }
+
+    .title {
+      margin-top: 4rem;
+    }
+   
+
+    .imgbg {
+      width: 100px;
+    }
+
+    .row {
+      flex-direction: column;
+    }
+
+    .submitButton {
+      margin: 0;
+      width: 100%;
+    }
+  }

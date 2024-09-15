@@ -1,0 +1,141 @@
+.formContainer {
+    background-color: #E1B788;
+    padding-top: 2rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    color: #000;
+    
+  }
+  
+  .title {
+    color: #000;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    margin-top: 150px;
+  }
+
+  .container {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .contactInfo {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-family: 'Gayathri' sans-serif;
+    font-weight: 200;
+    color: #007bff; /* Cor desejada quando o cursor passar por cima */
+    
+  }
+  
+
+  .button {
+    background-color: transparent;
+    color: #000;
+    border: 2px solid #000;
+    padding: 0.8rem 2.5rem;
+    cursor: pointer;
+    align-self: center;
+    margin: 0 auto;
+  }
+
+  .row {
+    display: flex;
+    gap: 2rem;
+    margin-block: 2rem;
+    
+  }
+  
+  .address {
+    background-color: #E1B788;
+    color: #fff;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.75rem;
+    padding: 1rem;
+    margin-top: auto; /* Afasta o elemento para o final da coluna */
+    display: flex;
+    justify-content: space-between;
+    
+    span {
+      margin-left: 1rem;
+    }
+  }
+  /* Define a cor padrão dos links */
+a {
+  text-decoration: none; /* Remove o sublinhado */
+  color: inherit; /* Usa a cor do texto pai */
+}
+
+/* Define a cor dos links quando o cursor estiver sobre eles */
+a:hover {
+  color: #007bff; /* Altere para a cor desejada */
+}
+
+.submitButton {
+  padding: 9px 20px;     /* Adiciona espaçamento interno ao botão */
+  border: 2px solid black; /* Adiciona uma borda preta de 2px */
+  background-color: transparent; /* Fundo branco */
+  color: black;            /* Cor do texto preta */
+  cursor: pointer;         /* Muda o cursor para pointer ao passar sobre o botão */
+  font-size: 1rem;         /* Tamanho da fonte */
+  margin-left: 250px;
+  
+  
+}
+
+.submitButton:hover {
+  background-color: rgb(0, 0, 0); /* Troca a cor de fundo quando passar o mouse */
+  color: white;            /* Troca a cor do texto quando passar o mouse */
+  
+}
+ 
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.5rem;
+
+  }
+
+  .contactInfo {
+    font-size: 1rem;
+  }
+
+  .submitButton {
+    margin: auto;
+    width: 100%;
+  }
+
+  .formContainer {
+    padding-inline: 2rem;
+    padding-top: 1rem;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .address {
+    background-color: #E1B788;
+    color: #fff;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1rem;
+    padding: 1rem;
+    margin-top: auto; /* Afasta o elemento para o final da coluna */
+    display: flex;
+    justify-content: space-between;
+    
+    span {
+      margin-left: 1rem;
+    }
+  }
+}

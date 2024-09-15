@@ -1,0 +1,77 @@
+.hero {
+    display: flex;
+}
+
+.image {
+    width: 100%;
+    padding: 7rem;
+    padding-bottom: 2rem;
+}
+
+.groupCard {
+    display: flex;
+}
+
+.card1{
+    background-color: #E1B788;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.card2, .card3{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.descricao {
+    font-size: 1.95rem;
+    text-align: center;
+    padding-bottom: 10rem;
+}
+
+.groupCard {
+    background-color: none;
+    background: url(../assets/bgPeople.png);
+}
+.githubLink {
+    color: inherit; /* Mantém a cor original do texto */
+    text-decoration: none; /* Remove o sublinhado padrão */
+}
+  
+  .githubLink:hover {
+    color: #007bff; /* Cor desejada quando o cursor passar por cima */
+    text-decoration: underline; /* (Opcional) Adiciona sublinhado ao passar o cursor */
+}
+
+@media (max-width: 1200px) {
+    .descricao {
+        font-size: 1.5rem;
+    }
+    .groupCard {
+    }
+
+    .image {
+        width: 400px;
+    }
+}
+@media (max-width: 1000px) {
+    .descricao {
+        font-size: 1.5rem;
+    }
+    .groupCard {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .image {
+        width: 400px;
+        padding: 3rem;
+    }
+
+    .groupCard > div { 
+        width: 100%;
+    }
+
+}
+

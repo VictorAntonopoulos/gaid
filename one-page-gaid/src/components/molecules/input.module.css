@@ -1,0 +1,29 @@
+  .inputContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .label {
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+
+  .input {
+    flex: 1;
+    padding: 1rem;
+    border: 2px solid #000;
+    color: #000;
+    background-color: transparent;
+
+    &:focus {
+        outline: none;
+    }
+  }
+
+@media (width: 400px) {
+  .input {
+    padding: .75rem;
+  }
+}

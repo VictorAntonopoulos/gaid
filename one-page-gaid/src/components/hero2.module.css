@@ -1,0 +1,168 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #09090A;
+  color: white;
+  padding: 5rem;
+  padding-left: 0rem;
+  position: relative;
+}
+
+.content {
+  text-align: left;
+  max-width: 50%;
+  padding-left: 3rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+
+  p {
+    text-align: center;
+  }
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+
+
+
+}
+
+.subtitle {
+  padding-left: 3rem;
+  margin-top: 1rem;
+  font-size: 2rem;
+  line-height: 1;
+  overflow: hidden;
+  color: #bebdbd;
+
+
+}
+
+.descbtn {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  padding-left: 3rem;
+}
+
+.imgbtn {
+  margin-inline: 20px;
+  width: 5rem;
+}
+
+.button {
+  background-color: #007bff;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.image {
+  width: 35%;
+  border-radius: 50px;
+}
+
+.imgframe {
+  width: 300px;
+  position: absolute;
+  bottom: 12rem;
+}
+
+@media (max-width: 980px) {
+  .hero {
+    padding: 3rem;
+    padding-left: 0rem;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+  }
+  .title {
+    font-size: 1rem;
+
+  }
+
+  .imgbtn {
+    width: 5rem;
+  }
+
+}
+
+@media (max-width: 700px) {
+  .hero {
+    flex-direction: column-reverse;
+    padding: 0;
+    position: relative;
+
+  }
+
+  .content {
+    padding: 0;
+    max-width: 80%;
+  }
+  
+  .subtitle {
+    font-size: 1.5rem;
+    padding: 0;
+  }
+  .title {
+    font-size: 1rem;
+
+  }
+
+  .imgbtn {
+    width: 5rem;
+  }
+
+  .imgframe {
+    position: absolute;
+    width: 150px;
+    left: 0;
+  }
+
+}
+
+
+@media (max-width: 400px) {
+  .hero {
+    flex-direction: column-reverse;
+    padding: 0;
+    position: relative;
+
+  }
+
+  .content {
+    padding: 0;
+    max-width: 80%;
+  }
+  
+  .subtitle {
+    font-size: 1.25rem;
+    padding: 0;
+  }
+  .title {
+    font-size: 1rem;
+
+  }
+  .descbtn {
+    font-size: 1rem;
+    padding-left: 0;
+  }
+
+  .imgbtn {
+    width: 3rem;
+  }
+
+  .imgframe {
+    position: absolute;
+    width: 150px;
+    left: 0;
+  }
+
+}

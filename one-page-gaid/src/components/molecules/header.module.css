@@ -1,0 +1,35 @@
+/* Navbar.module.css */
+.navbar {
+    display: flex;
+    background-color: #000000;
+    align-items: center;
+    width: 100vw;
+    padding: 10px 20px;
+    color: #ffff;
+  }
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+}
+
+.title {
+    justify-self: start;
+    flex: 5;
+    text-align: center;
+    color: #3BA8E7;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: Cormorant Garamond, sans-serif;
+}
+
+  .navbar-logo img {
+    width: 30px;
+  }
+
+  @media (max-width:500px) {
+    .title {
+      font-size: .875rem;
+    }
+
+  }

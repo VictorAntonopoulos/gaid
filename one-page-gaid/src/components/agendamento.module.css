@@ -1,0 +1,144 @@
+.formContainer {
+  background-color: #0E1F33;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  color: #000;
+  position: relative;
+
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  gap: 4rem;
+  flex-direction: row;
+  margin-top: 7rem;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex: 2;
+  font-size: 1.5rem;
+  position: relative;
+  height: fit-content;
+}
+.p1 {
+  color: #3BA8E7;
+  position: absolute;
+  top: 0;
+  left: 2rem;
+  min-height: 30px;
+}
+span {
+  font-weight: bold;
+}
+
+.p2 {
+  color: #3BA8E7;
+ padding-inline: 2rem;
+ background-color: #0d3f6d;
+ border-radius: 20px;
+ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+ position: absolute;
+ left: 7rem;
+ min-height: 40px;
+ top: 3rem;
+
+}
+
+.p3 {
+  background-color: #0d3f6d;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  min-height: 200px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+  background: linear-gradient(to bottom right, #29487d, #1965bd);
+  mask: linear-gradient(circle, transparent 50%, #000);
+  -webkit-mask: linear-gradient(circle, transparent 50%, #000);
+  position: absolute;
+  left: 11rem;
+  top: 7rem;
+}
+
+.p4 {
+  background-color: #0d3f6d;
+  color: #fff;
+  border-radius: 20px;
+  padding: .5rem 2rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+  background: linear-gradient(to bottom right, #29487d, #1965bd);
+  mask: linear-gradient(circle, transparent 50%, #000);
+  -webkit-mask: linear-gradient(circle, transparent 50%, #000);
+  position: absolute;
+  left: 28rem;
+  min-height: 40px;
+
+  top: 23rem;
+}
+
+.p5 {
+  background-color: #0d3f6d;
+  color: #fff;
+  text-align: center;
+  padding: .5rem 2rem;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(to bottom right, #29487d, #1965bd);
+  mask: linear-gradient(circle, transparent 50%, #000);
+  -webkit-mask: linear-gradient(circle, transparent 50%, #000);
+  position: absolute;
+  left: 37rem;
+  top: 28rem;
+  min-height: 200px;
+}
+
+.img {
+  flex: 1;
+  width: 100%;
+  height: auto;
+  margin-right: 5rem;
+  margin-top: 0;
+}
+
+@media (max-width: 1300px) {
+  .container {
+    margin-top: 2rem;
+   flex-direction: column-reverse;
+  }
+
+  .img {
+    width: 250px;
+    margin: auto;
+  }
+}
+@media (max-width: 900px) {
+  .container {
+    margin-top: 2rem;
+   flex-direction: column-reverse;
+   position: static;
+   gap: .5rem;
+  }
+  .box {
+    margin-bottom: 4rem;
+  }
+
+  .p1, .p2, .p3, .p4, .p5, .p6 .p7 {
+    position: static;
+    inset: unset;
+    overflow: hidden;
+    margin-bottom: .5rem;
+  }
+
+  .img {
+    width: 250px;
+    margin: auto;
+  }
+}

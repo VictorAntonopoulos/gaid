@@ -1,0 +1,111 @@
+/* Navbar.module.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2C2C2C;
+    width: 100vw;
+    padding: 10px 20px;
+  }
+
+.navbarOpen {
+  display: none;
+  justify-content: center;
+  flex-direction: row-reverse;
+  width: 100vw;
+  height: min-content;
+  padding: 10px 20px;
+  background-color: #7b2121;
+
+  .navbar-logo {
+    display: none;
+  }
+
+  .navbar-user {
+    display: none;
+  }
+  
+  .navbar-menu {
+    flex: 1;
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+
+    li {
+      text-align: center;
+    }
+  }
+
+}
+  
+.navbar-logo {
+    display: flex;
+    align-items: self-start;
+    gap: .25rem;
+}
+
+  .navbar-logo .imgLogo {
+    width: 30px;
+  }
+  
+  .navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+   
+    
+
+  }
+  
+  .navbar-menu li a {
+    text-decoration: none;
+    font-size: 1rem;
+    display: inline-block; /* Certifique-se de que o link se comporta como um bloco em linha */
+    padding: 10px 20px; /* Espaçamento dentro do quadrado */
+    box-sizing: border-box; /* Garante que o padding não afete o tamanho do elemento */
+    
+    
+  }
+  
+  .navbar-menu li a:hover {
+    color: #CCCCCC;
+   
+  }
+  
+  .navbar-user .user-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .navbar-user .user-button img {
+    width: 40px;
+    height: auto;
+    
+  }
+
+  .hamburger-menu {
+    display: none;
+    cursor: pointer;
+  }
+
+  @media (max-width: 800px) {
+    .navbar-menu {
+      display: none;
+    }
+
+    .navbarOpen {
+      display: flex;
+    }
+
+    .hamburger-menu {
+      display: flex;
+      border: none;
+      background-color: transparent;
+    }
+
+    .menu-open {
+      background-color: red;
+    }
+  }
+  

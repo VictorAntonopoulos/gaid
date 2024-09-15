@@ -1,0 +1,205 @@
+/* Contêiner principal do formulário */
+.formContainer {
+    background-color: #3BA8E7;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    color: #000;
+}
+
+/* Estilos do formulário */
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-gap: 3rem;
+    padding: 4rem 3rem;
+    padding-bottom: 0;
+}
+
+/* Contêiner de toda a página */
+.container {
+    background-image: url('../assets/bgCadastroVeiculo.png');
+    background-size: cover; /* Faz a imagem cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo dos cards em geral */
+.cardsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+/* Cards Wrapper */
+.cardsWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    position: relative; /* Certifique-se de que os filhos fiquem dentro do wrapper */
+}
+
+/* Card individual */
+.card {
+    background-color: #3BA8E7;
+    border-radius: 16px;
+    padding: 30px;
+    font-size: 20px;
+    text-align: center;
+    width: 350px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+
+/* Hover effect for cards */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Variantes de cards */
+.registeredCard,
+.formCard,
+.infoCard {
+    color: #ffffff;
+    background-color: #0682ff;
+}
+
+/* Campos de input */
+.field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.field label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.field input {
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+    background-color: #f7f7f7;
+}
+
+.field input:focus {
+    outline: none;
+    border-color: #0a0a0a;
+}
+
+/* Botões gerais */
+.button {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+/* Hover effect for general buttons */
+.button:hover {
+    background-color: #0d77da;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Botão para voltar */
+.backButtonContainer {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.backButton {
+    background-color: #1965bd;
+    border: 1px solid #0a0a0a;
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, border-color 0.3s;
+    margin-right: 20px;
+}
+
+.backButton:hover {
+    background-color: #043aec;
+    border-color: #000000;
+}
+
+/* Botão de Cadastrar Novo Veículo */
+.newVehicleButton {
+    position: relative; /* Altera o position para garantir que não saia do fluxo normal */
+    z-index: 10; /* Certifica que ele esteja acima de outros elementos */
+    margin-top: 190px; /* Adiciona uma margem superior para afastar das imagens */
+    background-color: #000000;
+    color: white;
+    border: 10px;
+    border-radius: 8px;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.newVehicleButton:hover {
+    background-color: #0056b3;
+}
+
+.newVehicleButton:active {
+    transform: translateY(1px);
+}
+
+/* Botão de Ver Veículos Cadastrados */
+.viewVehiclesButton {
+    display: inline-block;
+    padding: 10px 10px;
+    background-color: #000000;
+    color: white;
+    border: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-align: center;
+    margin-top: 250px; /* Ajustado para evitar sobreposição com outros elementos */
+}
+
+.viewVehiclesButton:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+.viewVehiclesButton:active {
+    background-color: #003f7f;
+    transform: translateY(0);
+}
+
+/* Estilo do título do formulário */
+.formTitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #000000;
+    font-weight: bold;
+}
+
